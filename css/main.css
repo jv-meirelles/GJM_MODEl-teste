@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.container {
+  background-image: url("/assets/img/seta.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #00001C;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (min-height: 951px) and (max-width: 1300px) {
+  .imagem {
+    display: none;
+  }
+  .container {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 913px) and (max-width: 10000000000000000px) {
+  .container {
+    background-size: contain;
+  }
+  header {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+  }
+  header .logo {
+    height: 7vh;
+    margin-left: 10vh;
+  }
+  article {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+  }
+  article .textos {
+    margin-left: 10vh;
+  }
+  article h1 {
+    font-size: 9vh;
+    margin-left: -0.4vh;
+    color: #00A849;
+    font-weight: bold;
+  }
+  article h2 {
+    font-weight: 500;
+    color: #fff;
+    font-size: 3.5vh;
+  }
+  article .parag {
+    font-size: 2.8vh;
+    color: #fff;
+  }
+  article .parag span {
+    color: #FFE600;
+    font-weight: bold;
+  }
+  article .imagem {
+    margin-right: 10vh;
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 913px) and (max-width: 10000000000000000px) and (min-height: 806px) and (max-width: 1300px) {
+  article .imagem {
+    display: none;
+  }
+}
+@media screen and (min-width: 913px) and (max-width: 10000000000000000px) {
+  article .bnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh;
+    height: 6vh;
+    margin-top: 3vh;
+    width: 46vh;
+    background-color: #00A849;
+    font-family: "pt sans";
+    color: #fff;
+    font-weight: bold;
+    font-size: 3vh;
+  }
+}
+@media screen and (min-width: 913px) and (max-width: 10000000000000000px) {
+  article .bnt:hover {
+    box-shadow: 0 0.6vh 1.1vh rgba(66, 216, 131, 0.23);
+  }
+}
+@media screen and (min-width: 913px) and (max-width: 10000000000000000px) {
+  footer {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+  }
+  footer .cont {
+    color: #fff;
+    margin-top: -5vh;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5vh;
+  }
+  footer .wa_me {
+    color: #fff;
+    margin-left: 10vh;
+    margin-top: 3vh;
+  }
+  footer .numero {
+    -webkit-text-decoration: underline 0.2vh #fff;
+            text-decoration: underline 0.2vh #fff;
+    font-size: 2.2vh;
+    margin-left: 1vh;
+  }
+  footer .wtt {
+    margin-top: 0.3vh;
+  }
+  footer .wtt_and {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 912px) {
+  .container {
+    background-size: cover;
+  }
+  header {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  header .logo {
+    height: 11vw;
+  }
+  article {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+  }
+  article h1 {
+    text-align: center;
+    font-size: 11vw;
+    color: #00A849;
+    font-weight: bold;
+  }
+  article h2 {
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 4.8vw;
+  }
+  article .parag {
+    text-align: center;
+    font-size: 3.7vw;
+    color: #fff;
+  }
+  article .parag span {
+    color: #FFE600;
+    font-weight: bold;
+  }
+  article .imagem {
+    display: none;
+  }
+  article .bnt {
+    box-shadow: 0 0.6vh 1.1vh rgba(66, 216, 131, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh;
+    height: 6vh;
+    margin-top: 3vh;
+    margin-left: 11vw;
+    width: 55vw;
+    background-color: #00A849;
+    font-family: "pt sans";
+    color: #fff;
+    font-weight: bold;
+    font-size: 4vw;
+  }
+  footer {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  footer .cont {
+    color: #fff;
+    margin-top: -5vh;
+    position: absolute;
+    font-weight: bold;
+    font-size: 3.5vw;
+    margin-left: 7.5vw;
+  }
+  footer .wa_me {
+    color: #fff;
+    margin-top: 3vh;
+  }
+  footer .numero {
+    font-size: 3.2vw;
+    margin-left: 1.5vw;
+    -webkit-text-decoration: underline 0.2vh #fff;
+            text-decoration: underline 0.2vh #fff;
+  }
+  footer .wtt {
+    height: 4vw;
+  }
+  footer .wtt_and {
+    height: 2vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 799px) and (max-width: 800px) {
+  .container {
+    background-size: contain;
+  }
+  header {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+  }
+  header .logo {
+    height: 7vh;
+    margin-left: 10vh;
+  }
+  article {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+  }
+  article .textos {
+    margin-left: 10vh;
+  }
+  article h1 {
+    font-size: 9vh;
+    margin-left: -0.4vh;
+    color: #00A849;
+    font-weight: bold;
+  }
+  article h2 {
+    font-weight: 500;
+    color: #fff;
+    font-size: 3.5vh;
+  }
+  article .parag {
+    font-size: 2.8vh;
+    color: #fff;
+  }
+  article .parag span {
+    color: #FFE600;
+    font-weight: bold;
+  }
+  article .imagem {
+    margin-right: 10vh;
+    height: 75vh;
+  }
+}
+@media screen and (min-width: 799px) and (max-width: 800px) and (min-height: 951px) and (max-width: 1300px) {
+  article .imagem {
+    display: none;
+  }
+}
+@media screen and (min-width: 799px) and (max-width: 800px) {
+  article .bnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh;
+    height: 6vh;
+    margin-top: 3vh;
+    width: 46vh;
+    background-color: #00A849;
+    font-family: "pt sans";
+    color: #fff;
+    font-weight: bold;
+    font-size: 3vh;
+  }
+}
+@media screen and (min-width: 799px) and (max-width: 800px) {
+  article .bnt:hover {
+    box-shadow: 0 0.6vh 1.1vh rgba(66, 216, 131, 0.23);
+  }
+}
+@media screen and (min-width: 799px) and (max-width: 800px) {
+  footer {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+  }
+  footer .cont {
+    color: #fff;
+    margin-top: -5vh;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5vh;
+  }
+  footer .wa_me {
+    color: #fff;
+    margin-left: 10vh;
+    margin-top: 3vh;
+  }
+  footer .numero {
+    font-size: 2.2vh;
+    margin-left: 1vh;
+  }
+  footer .wtt {
+    margin-top: 0.3vh;
+  }
+  footer .wtt_and {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 798px) {
+  .container {
+    background-size: cover;
+  }
+  header {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  header .logo {
+    height: 11vw;
+  }
+  article {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+  }
+  article h1 {
+    text-align: center;
+    font-size: 11vw;
+    color: #00A849;
+    font-weight: bold;
+  }
+  article h2 {
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 4.8vw;
+  }
+  article .parag {
+    text-align: center;
+    font-size: 3.7vw;
+    color: #fff;
+  }
+  article .parag span {
+    color: #FFE600;
+    font-weight: bold;
+  }
+  article .imagem {
+    display: none;
+  }
+  article .bnt {
+    box-shadow: 0 0.6vh 1.1vh rgba(66, 216, 131, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh;
+    height: 6vh;
+    margin-top: 3vh;
+    margin-left: 11vw;
+    width: 55vw;
+    background-color: #00A849;
+    font-family: "pt sans";
+    color: #fff;
+    font-weight: bold;
+    font-size: 4vw;
+  }
+  footer {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  footer .cont {
+    color: #fff;
+    margin-top: -5vh;
+    position: absolute;
+    font-weight: bold;
+    font-size: 3.5vw;
+    margin-left: 7.5vw;
+  }
+  footer .wa_me {
+    color: #fff;
+    margin-top: 3vh;
+  }
+  footer .numero {
+    font-size: 3.2vw;
+    margin-left: 1.5vw;
+  }
+  footer .wtt {
+    height: 4vw;
+  }
+  footer .wtt_and {
+    height: 2vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 414px) {
+  .container {
+    background-size: cover;
+  }
+  header {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  header .logo {
+    height: 11vw;
+  }
+  article {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+  }
+  article h1 {
+    text-align: center;
+    font-size: 11vw;
+    color: #00A849;
+    font-weight: bold;
+  }
+  article h2 {
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 4.8vw;
+  }
+  article .parag {
+    text-align: center;
+    font-size: 3.7vw;
+    color: #fff;
+  }
+  article .parag span {
+    color: #FFE600;
+    font-weight: bold;
+  }
+  article .imagem {
+    display: none;
+  }
+  article .bnt {
+    box-shadow: 0 0.6vh 1.1vh rgba(66, 216, 131, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh;
+    height: 6vh;
+    margin-top: 3vh;
+    margin-left: 11vw;
+    width: 55vw;
+    background-color: #00A849;
+    font-family: "pt sans";
+    color: #fff;
+    font-weight: bold;
+    font-size: 4vw;
+  }
+  footer {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  footer .cont {
+    color: #fff;
+    margin-top: -3vh;
+    position: absolute;
+    font-weight: bold;
+    font-size: 3.5vw;
+    margin-left: 7.5vw;
+  }
+  footer .wa_me {
+    color: #fff;
+    margin-top: 3vh;
+  }
+  footer .numero {
+    font-size: 3.2vw;
+    margin-left: 1.5vw;
+  }
+  footer .wtt {
+    height: 4vw;
+  }
+  footer .wtt_and {
+    height: 2vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;700&display=swap');
+$backgroundColor: #00001C;
+$fontColor: #00A849;
+$spanColor: #FFE600;
+$white: #fff;
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins";
+}
+
+.container{
+    background-image: url("/assets/img/seta.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: $backgroundColor;
+    height: 100vh;
+    width: 100%;
+}
+
+
+//correção "background" e "image"
+@media screen and (min-height: 951px) and (max-width: 1300px){
+    .imagem{
+        display: none;
+  }
+    .container{
+        background-size: cover;
+}
+}
+
+//pc
+@media screen and (min-width: 913px) and (max-width:10000000000000000px){
+
+    
+
+
+    .container{
+        background-size: contain;
+    }
+    
+    header{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        display: flex;
+        
+        .logo{
+            height: 7vh;
+            margin-left: 10vh;
+        }
+    }
+
+    article{
+        
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        width: 100vw;
+
+        .textos{
+            margin-left: 10vh;
+        }
+
+        h1{
+            font-size: 9vh;
+            margin-left: -.4vh;
+            color: $fontColor;
+            font-weight: bold;
+        }
+
+        h2{
+            font-weight: 500;
+            color: $white;
+            font-size: 3.5vh;
+        }
+
+        .parag{
+            font-size: 2.8vh;
+            color: $white;
+            
+
+            span{
+                color: $spanColor;
+                font-weight: bold;
+            }
+        }
+
+        .imagem{
+            
+            margin-right: 10vh;
+            height: 80vh;
+        }
+
+        @media screen and (min-height: 806px) and (max-width: 1300px){
+            .imagem{
+                display: none;
+            }
+        }
+
+        .bnt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5vh;
+            height: 6vh;
+            margin-top: 3vh;
+            width: 46vh;
+            background-color: $fontColor;
+
+            font-family: "pt sans";
+            color: $white;
+            font-weight: bold;
+            font-size: 3vh;
+        }.bnt:hover{
+            box-shadow: 0 .6vh 1.1vh rgba(66, 216, 131, 0.23);
+        }
+
+
+    }
+
+    footer{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        display: flex;
+
+        .cont{
+            color: $white;
+            margin-top: -5vh;
+            position: absolute;
+            font-weight: bold;
+            font-size: 2.5vh;
+        }
+
+        .wa_me{
+            color: $white;
+            margin-left: 10vh;
+            margin-top: 3vh;
+
+        }.numero{
+           
+            text-decoration: underline .2vh $white;
+            font-size: 2.2vh;
+            margin-left: 1vh;
+        }
+
+        .wtt{
+            margin-top: .3vh;
+        }
+
+        .wtt_and{
+            display: flex;
+            align-items: center;
+        }
+        
+        
+    }
+}
+
+//tablet big
+@media screen and (min-width: 801px) and (max-width:912px){
+    .container{
+        background-size: cover;
+    }
+    
+    header{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+        .logo{
+            height: 11vw;
+        }
+    }
+
+    article{
+        
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        width: 100vw;
+
+        
+
+        h1{
+            text-align: center;
+            font-size: 11vw;
+            color: $fontColor;
+            font-weight: bold;
+        }
+
+        h2{
+            text-align: center;
+            font-weight: 500;
+            color: $white;
+            font-size: 4.8vw;
+        }
+
+        .parag{
+            text-align: center;
+            font-size: 3.7vw;
+            color: $white;
+            
+
+            span{
+                color: $spanColor;
+                font-weight: bold;
+            }
+        }
+
+        .imagem{
+            display: none;
+        }
+
+
+        .bnt{
+            box-shadow: 0 .6vh 1.1vh rgba(66, 216, 131, 0.23);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5vh;
+            height: 6vh;
+            margin-top: 3vh;
+            margin-left: 11vw;
+            width: 55vw;
+            background-color: $fontColor;
+
+            font-family: "pt sans";
+            color: $white;
+            font-weight: bold;
+            font-size: 4vw;
+        }
+
+
+    }
+
+    footer{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        .cont{
+            color: $white;
+            margin-top: -5vh;
+            position: absolute;
+            font-weight: bold;
+            font-size: 3.5vw;
+            margin-left: 7.5vw;
+        }
+
+        .wa_me{
+            color: $white;
+            margin-top: 3vh;
+
+        }.numero{
+            font-size: 3.2vw;
+            margin-left: 1.5vw;
+            text-decoration: underline .2vh $white;
+        }
+
+        .wtt{
+            height: 4vw;
+        }
+
+        .wtt_and{
+            height: 2vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+}
+}
+
+//800x600
+@media screen and (min-width: 799px) and (max-width: 800px){
+    .container{
+        background-size: contain;
+    }
+    
+    header{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        display: flex;
+        
+        .logo{
+            height: 7vh;
+            margin-left: 10vh;
+        }
+    }
+
+    article{
+        
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        width: 100vw;
+
+        .textos{
+            margin-left: 10vh;
+        }
+
+        h1{
+            font-size: 9vh;
+            margin-left: -.4vh;
+            color: $fontColor;
+            font-weight: bold;
+        }
+
+        h2{
+            font-weight: 500;
+            color: $white;
+            font-size: 3.5vh;
+        }
+
+        .parag{
+            font-size: 2.8vh;
+            color: $white;
+            
+
+            span{
+                color: $spanColor;
+                font-weight: bold;
+            }
+        }
+
+        .imagem{
+            
+            margin-right: 10vh;
+            height: 75vh;
+        }
+
+        @media screen and (min-height: 951px) and (max-width: 1300px){
+            .imagem{
+                display: none;
+            }
+        }
+
+        .bnt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5vh;
+            height: 6vh;
+            margin-top: 3vh;
+            width: 46vh;
+            background-color: $fontColor;
+
+            font-family: "pt sans";
+            color: $white;
+            font-weight: bold;
+            font-size: 3vh;
+        }.bnt:hover{
+            box-shadow: 0 .6vh 1.1vh rgba(66, 216, 131, 0.23);
+        }
+
+
+    }
+
+    footer{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        display: flex;
+
+        .cont{
+            color: $white;
+            margin-top: -5vh;
+            position: absolute;
+            font-weight: bold;
+            font-size: 2.5vh;
+        }
+
+        .wa_me{
+            color: $white;
+            margin-left: 10vh;
+            margin-top: 3vh;
+
+        }.numero{
+           
+            font-size: 2.2vh;
+            margin-left: 1vh;
+        }
+
+        .wtt{
+            margin-top: .3vh;
+        }
+
+        .wtt_and{
+            display: flex;
+            align-items: center;
+        }
+        
+        
+    }
+}
+
+//tablet
+@media screen and (min-width: 415px) and (max-width:798px){
+    .container{
+        background-size: cover;
+    }
+    
+    header{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+        .logo{
+            height: 11vw;
+        }
+    }
+
+    article{
+        
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        width: 100vw;
+
+        
+
+        h1{
+            text-align: center;
+            font-size: 11vw;
+            color: $fontColor;
+            font-weight: bold;
+        }
+
+        h2{
+            text-align: center;
+            font-weight: 500;
+            color: $white;
+            font-size: 4.8vw;
+        }
+
+        .parag{
+            text-align: center;
+            font-size: 3.7vw;
+            color: $white;
+            
+
+            span{
+                color: $spanColor;
+                font-weight: bold;
+            }
+        }
+
+        .imagem{
+            display: none;
+        }
+
+
+        .bnt{
+            box-shadow: 0 .6vh 1.1vh rgba(66, 216, 131, 0.23);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5vh;
+            height: 6vh;
+            margin-top: 3vh;
+            margin-left: 11vw;
+            width: 55vw;
+            background-color: $fontColor;
+
+            font-family: "pt sans";
+            color: $white;
+            font-weight: bold;
+            font-size: 4vw;
+        }
+
+
+    }
+
+    footer{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        .cont{
+            color: $white;
+            margin-top: -5vh;
+            position: absolute;
+            font-weight: bold;
+            font-size: 3.5vw;
+            margin-left: 7.5vw;
+        }
+
+        .wa_me{
+            color: $white;
+            margin-top: 3vh;
+
+        }.numero{
+            font-size: 3.2vw;
+            margin-left: 1.5vw;
+        }
+
+        .wtt{
+            height: 4vw;
+        }
+
+        .wtt_and{
+            height: 2vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+}
+}
+
+//mobile
+@media screen and (min-width: 0px) and (max-width:414px){
+    .container{
+        background-size: cover;
+    }
+    
+    header{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+        .logo{
+            height: 11vw;
+        }
+    }
+
+    article{
+        
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        width: 100vw;
+
+        
+
+        h1{
+            text-align: center;
+            font-size: 11vw;
+            color: $fontColor;
+            font-weight: bold;
+        }
+
+        h2{
+            text-align: center;
+            font-weight: 500;
+            color: $white;
+            font-size: 4.8vw;
+        }
+
+        .parag{
+            text-align: center;
+            font-size: 3.7vw;
+            color: $white;
+            
+
+            span{
+                color: $spanColor;
+                font-weight: bold;
+            }
+        }
+
+        .imagem{
+            display: none;
+        }
+
+
+        .bnt{
+            box-shadow: 0 .6vh 1.1vh rgba(66, 216, 131, 0.23);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5vh;
+            height: 6vh;
+            margin-top: 3vh;
+            margin-left: 11vw;
+            width: 55vw;
+            background-color: $fontColor;
+
+            font-family: "pt sans";
+            color: $white;
+            font-weight: bold;
+            font-size: 4vw;
+        }
+
+
+    }
+
+    footer{
+        width: 100vw;
+        height: 15vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        .cont{
+            color: $white;
+            margin-top: -3vh;
+            position: absolute;
+            font-weight: bold;
+            font-size: 3.5vw;
+            margin-left: 7.5vw;
+        }
+
+        .wa_me{
+            color: $white;
+            margin-top: 3vh;
+
+        }.numero{
+            font-size: 3.2vw;
+            margin-left: 1.5vw;
+        }
+
+        .wtt{
+            height: 4vw;
+        }
+
+        .wtt_and{
+            height: 2vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+}
+
+}
